@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 150vh;
+}
+
+.col-6{
+  width: 50%;
+  padding: 0, 15px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#accordionSection {
+  padding: 100px 0;
+  background-color: aqua;
+  color: #fff;
+}
+
+
+
+.plus {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease-out;
+}
+
+.accordion__name {
+  background-color: rgba(57, 61, 71, 0.7);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__content {
+  overflow: hidden;
+  padding: 10px 20px;
+  max-height: 0;
+  transition: 0.5s ease-out;
+}
+
+.accordion__content p {
+  padding: 10px;
+}
+
+.accordion__wrap.accordion__active .accordion__content {
+  max-height: 500px;
+  transition: 0.5s ease-out;
+}
+/* 'accordion__wrap accordion__active' */
+
+.accordion__wrap.accordion__active .plus {
+  transform: rotate(180deg);
+}
+
+/* selector.selector - 'brother sister'
+
+selector .selector - 'parent' > 'child' */
